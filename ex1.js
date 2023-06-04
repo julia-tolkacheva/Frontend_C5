@@ -39,7 +39,7 @@ for (let studentN = 0; studentN < allStudents.length; studentN += 1) {
     name: studentName,
     age: studentAge,
     prof: studentProf,
-    lang: studentLang,
+    lang: studentLang
   };
   listResult.push(listObj)
 } 
