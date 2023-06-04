@@ -12,7 +12,7 @@ const MIN_LIM = 1
 const MAX_LIM = 10
 
 // Назначаем обработчик кнопки 
-btnNode.addEventListener('click', async () => {
+btnNode.addEventListener('click', () => {
   const limitVal = limitNode.value;
   // console.log(limitVal)
   if (limitVal < MIN_LIM || limitVal > MAX_LIM) {
