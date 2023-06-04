@@ -14,5 +14,12 @@ const my_JSON =
   ]
 }
 `
-const list = JSON.parse(my_JSON)
-console.log(list)
+// Парсим JSON строку
+const people = JSON.parse(my_JSON)
+
+// Преобразуем возраст из строки в число
+for (let i = 0; i < people.list.length; i += 1) {
+  people.list[i].age = Number(people.list[i].age)
+}
+// Выводим в консоль объект преобразованный в строку
+console.log(JSON.stringify(people, null, 2))
